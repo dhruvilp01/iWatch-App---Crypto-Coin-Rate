@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A1711BB620F432F00063336D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1711BB520F432F00063336D /* AppDelegate.swift */; };
+		A1711BB820F432F00063336D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1711BB720F432F00063336D /* ViewController.swift */; };
+		A1711BBB20F432F00063336D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1711BB920F432F00063336D /* Main.storyboard */; };
+		A1711BBD20F432F10063336D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1711BBC20F432F10063336D /* Assets.xcassets */; };
+		A1711BC020F432F10063336D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1711BBE20F432F10063336D /* LaunchScreen.storyboard */; };
+		A1711BC520F432F10063336D /* Coin WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A1711BC420F432F10063336D /* Coin WatchKit App.app */; };
+		A1711BCB20F432F10063336D /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1711BC920F432F10063336D /* Interface.storyboard */; };
+		A1711BCD20F432F20063336D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1711BCC20F432F20063336D /* Assets.xcassets */; };
+		A1711BD420F432F20063336D /* Coin WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A1711BD320F432F20063336D /* Coin WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A1711BD920F432F20063336D /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1711BD820F432F20063336D /* InterfaceController.swift */; };
+		A1711BDB20F432F20063336D /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1711BDA20F432F20063336D /* ExtensionDelegate.swift */; };
+		A1711BDD20F432F20063336D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1711BDC20F432F20063336D /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A1711BC620F432F10063336D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1711BAA20F432F00063336D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1711BC320F432F10063336D;
+			remoteInfo = "Coin WatchKit App";
+		};
+		A1711BD520F432F20063336D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1711BAA20F432F00063336D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1711BD220F432F20063336D;
+			remoteInfo = "Coin WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A1711BE420F432F20063336D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A1711BD420F432F20063336D /* Coin WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1711BE820F432F20063336D /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				A1711BC520F432F10063336D /* Coin WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A1711BB220F432F00063336D /* Coin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1711BB520F432F00063336D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A1711BB720F432F00063336D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A1711BBA20F432F00063336D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A1711BBC20F432F10063336D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A1711BBF20F432F10063336D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A1711BC120F432F10063336D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1711BC420F432F10063336D /* Coin WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coin WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1711BCA20F432F10063336D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		A1711BCC20F432F20063336D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A1711BCE20F432F20063336D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1711BD320F432F20063336D /* Coin WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Coin WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1711BD820F432F20063336D /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		A1711BDA20F432F20063336D /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		A1711BDC20F432F20063336D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A1711BDE20F432F20063336D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A1711BAF20F432F00063336D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1711BD020F432F20063336D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A1711BA920F432F00063336D = {
+			isa = PBXGroup;
+			children = (
+				A1711BB420F432F00063336D /* Coin */,
+				A1711BC820F432F10063336D /* Coin WatchKit App */,
+				A1711BD720F432F20063336D /* Coin WatchKit Extension */,
+				A1711BB320F432F00063336D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A1711BB320F432F00063336D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1711BB220F432F00063336D /* Coin.app */,
+				A1711BC420F432F10063336D /* Coin WatchKit App.app */,
+				A1711BD320F432F20063336D /* Coin WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A1711BB420F432F00063336D /* Coin */ = {
+			isa = PBXGroup;
+			children = (
+				A1711BB520F432F00063336D /* AppDelegate.swift */,
+				A1711BB720F432F00063336D /* ViewController.swift */,
+				A1711BB920F432F00063336D /* Main.storyboard */,
+				A1711BBC20F432F10063336D /* Assets.xcassets */,
+				A1711BBE20F432F10063336D /* LaunchScreen.storyboard */,
+				A1711BC120F432F10063336D /* Info.plist */,
+			);
+			path = Coin;
+			sourceTree = "<group>";
+		};
+		A1711BC820F432F10063336D /* Coin WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				A1711BC920F432F10063336D /* Interface.storyboard */,
+				A1711BCC20F432F20063336D /* Assets.xcassets */,
+				A1711BCE20F432F20063336D /* Info.plist */,
+			);
+			path = "Coin WatchKit App";
+			sourceTree = "<group>";
+		};
+		A1711BD720F432F20063336D /* Coin WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A1711BD820F432F20063336D /* InterfaceController.swift */,
+				A1711BDA20F432F20063336D /* ExtensionDelegate.swift */,
+				A1711BDC20F432F20063336D /* Assets.xcassets */,
+				A1711BDE20F432F20063336D /* Info.plist */,
+			);
+			path = "Coin WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A1711BB120F432F00063336D /* Coin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1711BE920F432F20063336D /* Build configuration list for PBXNativeTarget "Coin" */;
+			buildPhases = (
+				A1711BAE20F432F00063336D /* Sources */,
+				A1711BAF20F432F00063336D /* Frameworks */,
+				A1711BB020F432F00063336D /* Resources */,
+				A1711BE820F432F20063336D /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A1711BC720F432F10063336D /* PBXTargetDependency */,
+			);
+			name = Coin;
+			productName = Coin;
+			productReference = A1711BB220F432F00063336D /* Coin.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A1711BC320F432F10063336D /* Coin WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1711BE520F432F20063336D /* Build configuration list for PBXNativeTarget "Coin WatchKit App" */;
+			buildPhases = (
+				A1711BC220F432F10063336D /* Resources */,
+				A1711BE420F432F20063336D /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A1711BD620F432F20063336D /* PBXTargetDependency */,
+			);
+			name = "Coin WatchKit App";
+			productName = "Coin WatchKit App";
+			productReference = A1711BC420F432F10063336D /* Coin WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		A1711BD220F432F20063336D /* Coin WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1711BE120F432F20063336D /* Build configuration list for PBXNativeTarget "Coin WatchKit Extension" */;
+			buildPhases = (
+				A1711BCF20F432F20063336D /* Sources */,
+				A1711BD020F432F20063336D /* Frameworks */,
+				A1711BD120F432F20063336D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Coin WatchKit Extension";
+			productName = "Coin WatchKit Extension";
+			productReference = A1711BD320F432F20063336D /* Coin WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A1711BAA20F432F00063336D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = Dhruvil;
+				TargetAttributes = {
+					A1711BB120F432F00063336D = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					A1711BC320F432F10063336D = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					A1711BD220F432F20063336D = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = A1711BAD20F432F00063336D /* Build configuration list for PBXProject "Coin" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A1711BA920F432F00063336D;
+			productRefGroup = A1711BB320F432F00063336D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A1711BB120F432F00063336D /* Coin */,
+				A1711BC320F432F10063336D /* Coin WatchKit App */,
+				A1711BD220F432F20063336D /* Coin WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A1711BB020F432F00063336D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1711BC020F432F10063336D /* LaunchScreen.storyboard in Resources */,
+				A1711BBD20F432F10063336D /* Assets.xcassets in Resources */,
+				A1711BBB20F432F00063336D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1711BC220F432F10063336D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1711BCD20F432F20063336D /* Assets.xcassets in Resources */,
+				A1711BCB20F432F10063336D /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1711BD120F432F20063336D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1711BDD20F432F20063336D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A1711BAE20F432F00063336D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1711BB820F432F00063336D /* ViewController.swift in Sources */,
+				A1711BB620F432F00063336D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1711BCF20F432F20063336D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1711BDB20F432F20063336D /* ExtensionDelegate.swift in Sources */,
+				A1711BD920F432F20063336D /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A1711BC720F432F10063336D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1711BC320F432F10063336D /* Coin WatchKit App */;
+			targetProxy = A1711BC620F432F10063336D /* PBXContainerItemProxy */;
+		};
+		A1711BD620F432F20063336D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1711BD220F432F20063336D /* Coin WatchKit Extension */;
+			targetProxy = A1711BD520F432F20063336D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A1711BB920F432F00063336D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1711BBA20F432F00063336D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A1711BBE20F432F10063336D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1711BBF20F432F10063336D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A1711BC920F432F10063336D /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1711BCA20F432F10063336D /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A1711BDF20F432F20063336D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A1711BE020F432F20063336D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A1711BE220F432F20063336D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 767LHU7K45;
+				INFOPLIST_FILE = "Coin WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Dhruvilp7068.Coin.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Debug;
+		};
+		A1711BE320F432F20063336D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 767LHU7K45;
+				INFOPLIST_FILE = "Coin WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Dhruvilp7068.Coin.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Release;
+		};
+		A1711BE620F432F20063336D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 767LHU7K45;
+				IBSC_MODULE = Coin_WatchKit_Extension;
+				INFOPLIST_FILE = "Coin WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Dhruvilp7068.Coin.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Debug;
+		};
+		A1711BE720F432F20063336D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 767LHU7K45;
+				IBSC_MODULE = Coin_WatchKit_Extension;
+				INFOPLIST_FILE = "Coin WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Dhruvilp7068.Coin.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Release;
+		};
+		A1711BEA20F432F20063336D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 767LHU7K45;
+				INFOPLIST_FILE = Coin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Dhruvilp7068.Coin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A1711BEB20F432F20063336D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 767LHU7K45;
+				INFOPLIST_FILE = Coin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Dhruvilp7068.Coin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A1711BAD20F432F00063336D /* Build configuration list for PBXProject "Coin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1711BDF20F432F20063336D /* Debug */,
+				A1711BE020F432F20063336D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1711BE120F432F20063336D /* Build configuration list for PBXNativeTarget "Coin WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1711BE220F432F20063336D /* Debug */,
+				A1711BE320F432F20063336D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1711BE520F432F20063336D /* Build configuration list for PBXNativeTarget "Coin WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1711BE620F432F20063336D /* Debug */,
+				A1711BE720F432F20063336D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1711BE920F432F20063336D /* Build configuration list for PBXNativeTarget "Coin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1711BEA20F432F20063336D /* Debug */,
+				A1711BEB20F432F20063336D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A1711BAA20F432F00063336D /* Project object */;
+}
