@@ -19,6 +19,7 @@
 		A1711BD920F432F20063336D /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1711BD820F432F20063336D /* InterfaceController.swift */; };
 		A1711BDB20F432F20063336D /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1711BDA20F432F20063336D /* ExtensionDelegate.swift */; };
 		A1711BDD20F432F20063336D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1711BDC20F432F20063336D /* Assets.xcassets */; };
+		A1711BED20F4332C0063336D /* CoinValueRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1711BEC20F4332C0063336D /* CoinValueRowController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		A1711BDA20F432F20063336D /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		A1711BDC20F432F20063336D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1711BDE20F432F20063336D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1711BEC20F4332C0063336D /* CoinValueRowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinValueRowController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				A1711BD820F432F20063336D /* InterfaceController.swift */,
+				A1711BEC20F4332C0063336D /* CoinValueRowController.swift */,
 				A1711BDA20F432F20063336D /* ExtensionDelegate.swift */,
 				A1711BDC20F432F20063336D /* Assets.xcassets */,
 				A1711BDE20F432F20063336D /* Info.plist */,
@@ -295,6 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1711BED20F4332C0063336D /* CoinValueRowController.swift in Sources */,
 				A1711BDB20F432F20063336D /* ExtensionDelegate.swift in Sources */,
 				A1711BD920F432F20063336D /* InterfaceController.swift in Sources */,
 			);
@@ -518,7 +522,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
 			};
 			name = Debug;
 		};
@@ -537,7 +541,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
 			};
 			name = Release;
 		};
@@ -548,6 +552,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 767LHU7K45;
 				INFOPLIST_FILE = Coin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -566,6 +571,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 767LHU7K45;
 				INFOPLIST_FILE = Coin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

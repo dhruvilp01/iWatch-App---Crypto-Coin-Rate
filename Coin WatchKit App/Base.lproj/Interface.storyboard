@@ -1,15 +1,51 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11134" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14295.6" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11055"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14270.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14234.1"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Coin_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <button width="0.80000000000000004" height="29" alignment="center" title="Refresh" id="y8C-bg-VvX">
+                            <connections>
+                                <action selector="refreshBtn" destination="AgC-eL-Hgc" id="n4u-Qx-eVS"/>
+                            </connections>
+                        </button>
+                        <table alignment="left" id="MaC-vU-iWI">
+                            <items>
+                                <tableRow identifier="coinValueRow" id="Md3-4g-UUH" customClass="CoinValueRowController" customModule="Coin_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="2L9-0Y-fs2">
+                                        <items>
+                                            <label alignment="left" verticalAlignment="center" text="BitCoin" id="Hsv-oB-hPW">
+                                                <fontDescription key="font" type="system" pointSize="14"/>
+                                            </label>
+                                            <label width="64" alignment="right" verticalAlignment="center" text="$9999.99" id="XHw-IH-rNu">
+                                                <color key="textColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="font" type="system" weight="medium" pointSize="16"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="coinNameLbl" destination="Hsv-oB-hPW" id="1pU-fr-mso"/>
+                                        <outlet property="coinValueLbl" destination="XHw-IH-rNu" id="nFs-pR-ayR"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="MaC-vU-iWI" id="jh3-AG-Qsu"/>
+                    </connections>
+                </controller>
             </objects>
+            <point key="canvasLocation" x="-357" y="59"/>
         </scene>
     </scenes>
 </document>
